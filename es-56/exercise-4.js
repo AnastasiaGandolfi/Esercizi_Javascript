@@ -5,8 +5,8 @@ function uncompletedNotes(notes) {
       if (todo.done === false) {
         uncompletedTodos.push(todo);
       }
-    })
-  })
+    });
+  });
   return uncompletedTodos;
 }
 
@@ -60,4 +60,6 @@ const notes = [
   },
 ];
 
-uncompletedNotes(notes);
+const uncompletedTodos = uncompletedNotes(notes);
+console.log(uncompletedTodos);
+
